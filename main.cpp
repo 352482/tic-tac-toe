@@ -28,6 +28,7 @@ int main(){
 			move_buffer[0]='\0';
 			cin >> move_buffer;
 			if (regex_match(move_buffer, coordinate_regex) && strlen(move_buffer) == 2){
+				//TODO add coordinate validity checking
 				valid_coordinates=true;
 				break;
 			}
@@ -42,6 +43,7 @@ int main(){
 				current_player='X';
 				break;
 		}
+		//TODO check for win condition and track wins
 	}
 	return 0;
 }
