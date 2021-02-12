@@ -121,6 +121,8 @@ int main(){
 				cout << "Stalemate." << endl;
 				clear_board(board_array);
 				current_player = 'X';
+				cout << "Player X Wins: " << player_x_wins << endl;
+				cout << "Player O Wins: " << player_o_wins << endl;
 				break;
 			case 1:
 				//a player has won
